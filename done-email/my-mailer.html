@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Responsive Email Design</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <style type="text/css">
+
+/* CLIENT-SPECIFIC STYLES ------------------- */
+  
+  #outlook a {
+    padding: 0; /* Force Outlook to provide a "view in browser" message */
+  } 
+  
+  .ReadMsgBody {
+    width: 100%; /* Force Hotmail to display emails at full width */
+  } 
+  
+  .ExternalClass {
+    width:100%; /* Force Hotmail to display emails at full width */
+  }
+  
+  .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+    line-height: 100%; /* Force Hotmail to display normal line spacing */
+  }
+  
+  body, table, td, a { /* Prevent WebKit and Windows mobile changing default text sizes */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  table, td { /* Remove spacing between tables in Outlook 2007 and up */
+    mso-table-lspace: 0pt;
+    mso-table-rspace:0pt;
+  }
+  
+  img { /* Allow smoother rendering of resized image in Internet Explorer */
+    -ms-interpolation-mode: bicubic;
+  }
+
+  /* RESET STYLES --------------------------- */
+  
+  body { 
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+  }
+  
+  img { 
+    border: 0;
+    height: auto;
+    line-height: 100%;
+    outline: none;
+    text-decoration: none;
+  }
+  
+  table {
+    border-collapse: collapse !important;
+  }
+
+  /* iOS BLUE LINKS */
+  
+  .apple-links a { 
+    color: #999999;
+    text-decoration: none;
+  }
+
+/* MOBILE STYLES ------------------------ */
+  
+  @media screen and (max-width: 600px) {
+
+    td[class="logo"] img {
+      margin: 0 auto !important;
+    }
+
+    table[class="wrapper"] {
+      width: 100% !important;
+    } 
+    table[class="center"] {
+      margin: 0 auto !important;
+    } 
+
+    td[class="mobile-image-pad"] {
+      padding: 0 10px 0 10px !important;
+    }
+    
+    td[class="mobile-title-pad"] {
+      padding: 30px 10px 0px 10px !important;
+    }
+
+    td[class="mobile-text-pad"] {
+      padding: 10px 10px 10px 10px !important;
+    }
+
+    td[class="mobile-column-right"] {
+      padding-top: 20px !important;
+    }
+
+    img[class="fluid-image"] {
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    td[class="hide"] {
+      display: none !important;
+    } 
+
+    td[class="mobile-button"] {
+      padding: 12px 60px 12px 60px !important;
+    }
+  
+    td[class="mobile-button"] a {
+      font-size: 24px !important;
+    }
+  }
+
+
+   </style>
+</head>
+<body style="margin: 0; padding: 0;">
+
+   <!-- CONTAINER TABLE -->
+   <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+     <tr>
+       <td align="center">
+         <!-- WRAPPER TABLE -->
+         <table border="0" cellpadding="0" cellspacing="0" width="600" class="wrapper">
+           <!-- LOGO/PREHEADER TEXT -->
+           <tr>
+             <td>
+               <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                 <tr>
+                   <td align="left">
+                     <a href="http://techfinancials.com/" target="_blank"><img style="width:114px; height:35px; padding:6px 0 6px 0; display: block; border: none;" alt="TechFinancials" src="https://dl.dropboxusercontent.com/u/27040816/TF/tf/images/logo.png"/></a>
+                  </td>
+               </tr>
+            </table>
+         </td>
+      </tr>
+   </table>
+</td>
+</tr>
+</table>
+
+<!-- CONTAINER TABLE -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+  <tr>
+    <td align="center">
+      <!-- WRAPPER TABLE -->
+      <table border="0" cellpadding="0" cellspacing="0" width="600" class="wrapper">
+        <tr>
+          <td>
+            <!-- TWO COLUMNS -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td>
+                  <!-- LEFT COLUMN -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="400" align="left" class="wrapper">
+                    <tr>
+                      <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td align="left" style="padding:0 5px 2px 0;" class="mobile-image-pad"><img height="285" width="400" style="display:block; border:none;" alt="Main image" src="https://dl.dropboxusercontent.com/u/27040816/TF/tf/images/main.jpg" class="fluid-image"/></td>
+                         </tr>
+                     </table>
+                  </td>
+               </tr>
+            </table>
+            <!-- RIGHT COLUMN -->
+          <table border="0" cellpadding="0" cellspacing="0" width="195" class="center" style="padding:2px 0 0 0;">
+                    <tr>
+                      <td class="mobile-column-right">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background:#001236;">
+                          <tr>
+                      <td height="100%" style="padding:0 20px 0 15px; color:#fff; font-size:26px; line-height:26px; max-height:26px; height:26px;">Feature</td>
+                    </tr>
+                    <tr>
+                      <td height="100%" style="padding:0 20px 0 15px; color:#fff; font-size:18px; line-height:18px; max-height:18px; height:18px;">of the</td>
+                    </tr>
+                    <tr>
+                      <td height="100%" style="padding:0 20px 0 15px; color:#fff; font-size:36px; line-height:36px; max-height:36px; height:36px;">Month</td>
+                    </tr>
+                    <tr>
+                      <td height="100%" style="padding:0 20px 15px 15px; color:#fff; vertical-align:bottom; font-size:21px; line-height:21px; max-height:174px; height:191px;">December 2013</td>
+                    </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+      </td>
+   </tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<!-- CONTAINER TABLE -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+  <tr>
+    <td align="center" style="padding: 20px 0 20px 0;">
+      <!-- WRAPPER TABLE -->
+      <table border="0" cellpadding="0" cellspacing="0" width="600" class="wrapper">
+        <tr>
+          <td class="mobile-text-pad">
+            <!-- TWO COLUMNS -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td>
+                  <!-- LEFT COLUMN -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="370" align="left" class="wrapper">
+                    <tr>
+                      <td>
+                          <table border="0" cellpadding="0" cellspacing="0" width="370" class="wrapper">
+                            <tr>
+                                        <td>
+                                          <p style="margin:0; padding:6px 0 6px 0; font-size:28px; font-family:'Trebuchet MS', Helvetica, sans-serif;">Introducing Our New Feature Bulletin</p>
+                                        </td>
+                                      </tr>
+
+              <tr>
+                <td>
+                  <!-- LEFT COLUMN -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="185" align="left" class="wrapper">
+                    <tr>
+                      <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px 5px 0 0; font-size:10px;">
+                          <tr>
+                            <td>
+                              <table style="border-collapse:collapse; font-size:15px; font-family:Arial, Helvetica, sans-serif;" width="100%" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                       <tr>
+                                          <td align="left" width="20px" style="padding:2px 0 0 0; font-size:10px;" valign="top">
+                                             <img src="https://dl.dropboxusercontent.com/u/27040816/TF/tf/images/li_arrow.jpg" alt="">
+                                          </td>
+                                          <td align="left" style="padding:0 5px 0 0; font-size:10px;">The TechFinancials product team is happy to introduce a new service for our customers – the Feature of the Month. Every month we’ll focus on a different feature of the TF platform, perhaps introducing a feature you are not taking advantage of, or showing you how to better utilize features you are already familiar with.</td>
+                                       </tr>
+                                    </tbody>
+                                    </table>
+                                    <p style="margin:0; padding:6px 0 6px 0;">We would love to hear from you, what features and functionality you want to know more about, and feedback on this bulletin. Send to <a href="mailto:somemail@test.com" target="_blank" style="color:#0070c0;">[email address here]</a>.</p>
+                                    <p style="margin:0; padding:6px 0 6px 0;">To kick it off: Let’s talk about retention campaigns.</p>
+                                    <p style="margin:0; padding:6px 0 6px 0; font-size:12px; color:#0070c0;">Managing Retention Campaigns</p>
+                                    <p style="margin:0; padding:6px 0 6px 0;">You are probably already familiar with the TechFinancials back office marketing management system that enables you to build and track campaigns with affiliates and networks, in order to attract new users.</p>
+                                    <p style="margin:0; padding:6px 0 6px 0;">You might be less familiar with the system’s ability to create and manage retention campaigns. More and more TechFinancials partners are using tools to measure what is happening with existing users, in order to identify inactive users or those at risk of</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- RIGHT COLUMN -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="185" align="right" class="wrapper">
+                    <tr>
+                      <td class="mobile-column-right">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                             <td style="padding:2px 5px 0 14px; font-size:10px;">
+                                    <p style="margin:0; padding:0 0 12px 0;">becoming inactive – such as those with low balances, for example, who will not be able to continue trading unless they make a new deposit. These customers are excellent targets for a retention campaign, possibly offering a new bonus or other benefit for making a deposit and engaging in trading activities.</p>
+                                    <p style="margin:0; padding:0 0 6px 0;">As opposed to recruitment campaigns, retention campaigns are aimed at users you have direct access to, and so they can be offered by email, or through notifications on the trading site.</p>
+                                    <p style="margin:0; padding:6px 0 6px 0; font-size:12px; color:#001236;">What are the steps?</p>
+                                    <p style="margin:0; padding:6px 0 6px 0;">Follow these steps in the TechFinancials back office to run a retention campaign:</p>
+                                    <table style="border-collapse:collapse; font-size:10px; font-family:Arial, Helvetica, sans-serif;" width="100%" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                       <tr>
+                                          <td align="left" style="padding:0 5px 0 5px;" valign="top">1.</td><td style="padding:0 0 3px 0;"><strong>Define a marketer.</strong> This is a “fake” marketer, just used for the campaign.</td>
+                                       </tr>
+                                       <tr>
+                                          <td align="left" style="padding:0 5px 0 5px;" valign="top">2.</td><td style="padding:0 0 3px 0;"><strong>Create a new campaign.</strong> In this step you assign the campaign to the marketer you created, and add bonuses.</td>
+                                       </tr>
+                                       <tr>  
+                                          <td align="left" style="padding:0 5px 0 5px;" valign="top">3.</td><td style="padding:0 0 3px 0;"><strong>Create a retention (OFRTC) tracking code.</strong> This is how the user gets their bonus and enters the wagering cycle.</td>
+                                       </tr>
+                                       <tr>
+                                          <td align="left" style="padding:0 5px 0 5px;" valign="top">4.</td><td style="padding:0 0 3px 0;"><strong>Search/select the customers to send the campaign to.</strong></td>
+                                       </tr>
+                                    </tbody>
+                                    </table>
+                                 </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- RIGHT COLUMN -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="230" align="right" class="wrapper">
+                    <tr>
+                      <td class="mobile-column-right">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" aligh="right">
+                          <tr>
+                            <td style="padding:0 0 0 20px;">
+                             <img style="width:180px; height:141px; padding:6px 5px 6px 10px; display: block; border: none;" alt="Customer Loyalty" src="https://dl.dropboxusercontent.com/u/27040816/TF/tf/images/customer_loyalty.jpg"/>
+                           <p style="margin:0; padding:6px 0 6px 0; font-size:12px; color:#ff5c0b;">Are You Making the Most of Retention Campaigns?</p>
+                           <p style="margin:0; padding:0 0 6px 0;">Use retention campaigns to keep users in danger of churning away from your site active and trading.</p>
+                           <img style="width:170px; height:70px; padding:0 5px 1px 0; display: block; border: none;" alt="Customer Loyalty" src="https://dl.dropboxusercontent.com/u/27040816/TF/tf/images/coming_soon.jpg" />
+                           <table style="border-collapse:collapse; font-size:15px; font-family:Arial, Helvetica, sans-serif;" width="100%" cellspacing="0" cellpadding="0">
+                           <tbody>
+                              <tr>
+                                 <td align="left" width="20px" style="padding:2px 0 5px 0; font-size:10px;" valign="top">
+                                    <img src="https://dl.dropboxusercontent.com/u/27040816/TF/tf/images/li_arrow.jpg" alt="">
+                                 </td>
+                                 <td align="left" style="padding:0 5px 5px 0; font-size:10px;">Using Messages & Notifications</td>
+                              </tr>
+                              <tr>
+                                 <td align="left" width="20px" style="padding:2px 0 5px 0; font-size:10px;" valign="top">
+                                    <img src="https://dl.dropboxusercontent.com/u/27040816/TF/tf/images/li_arrow.jpg" alt="">
+                                 </td>
+                                 <td align="left" style="padding:0 5px 5px 0; font-size:10px;">The “Always Active” Trading Site</td>
+                              </tr>
+                              <tr>
+                                 <td align="left" width="20px" style="padding:2px 0 5px 0; font-size:10px;" valign="top">
+                                    <img src="https://dl.dropboxusercontent.com/u/27040816/TF/tf/images/li_arrow.jpg" alt="">
+                                 </td>
+                                 <td align="left" style="padding:0 5px 5px 0; font-size:10px;">Working with Bonuses</td>
+                              </tr>
+                           </tbody>
+                           </table>
+                            </td>
+                          </tr>
+                          </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- FOOTER -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+  <tr>
+    <td align="center" style="padding: 20px 0 20px 0;">
+      <!-- WRAPPER TABLE -->
+      <table border="0" cellpadding="0" cellspacing="0" width="600" align="center" class="wrapper">
+        <tr>
+          <td align="left" style="padding:15px 0 15px 0; font-size:10px; color:#000000;" valign="top" class="mobile-image-pad">
+            <img style="width:600px; height:432px; padding:0 0 0 0; display: block; border: none;" alt="Campaign Flow" src="https://dl.dropboxusercontent.com/u/27040816/TF/tf/images/flow.jpg" class="fluid-image"/>
+          </td>
+      </tr>
+</table>
+</td>
+</tr>
+</table>
+
+<!-- CONTAINER TABLE -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+  <tr>
+    <td align="center" style="padding: 20px 0 20px 0;">
+      <!-- WRAPPER TABLE -->
+      <table border="0" cellpadding="0" cellspacing="0" width="600" class="wrapper">
+        <!-- LOGO/PREHEADER TEXT -->
+        <tr>
+          <td class="mobile-text-pad">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+             <tr style="border-top:15px solid #001236;">
+          <td align="left" style="padding:19px 0 19px 15px; font-size:16px; line-height:16px; color:#ffffff; background:#ff5c0b;" valign="top">
+            LEARN MORE
+          </td>
+        </tr>
+        <tr>
+          <td align="left" style="padding:12px 0 112px 15px; font-size:11px; line-height:14px; color:#262626; background:#f2f2f2;" valign="top">
+            You can learn more about creating and managing your retention campaign at <a href="http://www.URL.com/" target="_blank" style="background:#c0c0c0; color:#bc2700; text-decoration:underline;">www.URL.com</a>, or in the document entitled Managing Retention Campaigns, available from your account manager.
+          </td>
+        </tr>
+        <tr>
+          <td align="left" style="padding:52px 7px 7px 15px; font-size:11px; line-height:10px; background:#001236; color:#ffffff;" valign="bottom" align="right">
+            CONTACT US: <a href="mailto:ProductManagement@TechFinancials.com" target="_blank" style="color:#ffffff">ProductManagement@TechFinancials.com</a>
+          </td>
+        </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
